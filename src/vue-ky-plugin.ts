@@ -8,10 +8,10 @@ declare module 'vue/types/vue' {
   }
 }
 
-export default function KyPlugin<T extends Ky>(vue: typeof _Vue, options?: T): void {
-  if (options === undefined) {
+export default function KyPlugin<T extends Ky>(vue: typeof _Vue, instance?: T): void {
+  if (instance === undefined) {
     vue.prototype.$ky = ky;
   } else {
-    vue.prototype.$ky = options;
+    vue.prototype.$ky = instance;
   }
 }
