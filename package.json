@@ -1,6 +1,6 @@
 {
   "name": "vue-ky-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple a ky plugin for vue",
   "main": "lib/vue-ky-plugin.ts",
   "types": "lib/vue-ky-plugin.d.ts",
